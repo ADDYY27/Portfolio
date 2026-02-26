@@ -1,15 +1,14 @@
-
 export const PROJECT_DETAILS = {
   "third-lens": {
-    title:     "The Third Lens",
-    subtitle:  "Full-Stack News Aggregator & Opinion Platform",
-    liveLink:  "https://thirdlens.vercel.app/",
-    accentColor: "#dce8f5",
+    title:      "The Third Lens",
+    subtitle:   "Full-Stack News Aggregator & Opinion Platform",
+    liveLink:   "https://thirdlens.vercel.app/",
+    image:      "/thirdlens-preview.png",
 
     sections: [
       {
-        num:   "01",
-        label: "The Introduction",
+        num:     "01",
+        label:   "The Introduction",
         heading: "News is broken. We built a fix.",
         body: [
           "The Third Lens is a full-stack web platform that aggregates live news, detects bias, and gives readers a space to form and share their own informed opinions — all in one place.",
@@ -17,8 +16,8 @@ export const PROJECT_DETAILS = {
         ],
       },
       {
-        num:   "02",
-        label: "The Problem Statement",
+        num:     "02",
+        label:   "The Problem Statement",
         heading: "Readers are trapped in a single lens.",
         body: [
           "Modern news consumption is deeply fragmented. Readers get their news from a single source — often filtered by an algorithm designed to maximise engagement, not understanding. This creates blind spots, hardens biases, and erodes informed discourse.",
@@ -26,41 +25,41 @@ export const PROJECT_DETAILS = {
         ],
       },
       {
-        num:   "03",
-        label: "The Unique Angle",
+        num:     "03",
+        label:   "The Unique Angle",
         heading: "Opinion meets intelligence — in real time.",
         body: [
           "Unlike standard news aggregators, The Third Lens layers a structured opinion system on top of live news. Every article can have multiple opinion pieces written by users — each tagged with a stance — so readers see the full spectrum of thought on any topic.",
           "The platform also implements real-time comment threads with nested replies, bias tagging on articles, and a Firebase-powered live sync so discussions update instantly without page refresh. The dark editorial UI is intentionally designed to reduce distraction and keep focus on the content.",
         ],
         highlights: [
-          "Live news aggregation with bias labels",
-          "Structured opinion writing per article",
-          "Nested real-time comment threads",
+          "Live news aggregation with bias labels per source",
+          "Structured opinion writing attached to each article",
+          "Nested real-time comment threads with likes",
           "Firebase Authentication for secure user profiles",
-          "Firestore schema supporting opinions, replies & likes",
+          "Firestore schema supporting opinions, replies & reactions",
         ],
       },
       {
-        num:   "04",
-        label: "The Technology Stack",
+        num:     "04",
+        label:   "The Technology Stack",
         heading: "Built for speed, scale, and real-time sync.",
         stack: [
-          { layer: "Frontend",    tech: "React.js, TailwindCSS, React Router" },
-          { layer: "Backend",     tech: "Firebase Cloud Functions, RESTful architecture" },
-          { layer: "Database",    tech: "Firebase Firestore (NoSQL, real-time)" },
-          { layer: "Auth",        tech: "Firebase Authentication (email + OAuth)" },
-          { layer: "Storage",     tech: "Firebase Storage for media assets" },
-          { layer: "Deployment",  tech: "Vercel (frontend), Firebase (backend)" },
+          { layer: "Frontend",   tech: "React.js, TailwindCSS, React Router" },
+          { layer: "Backend",    tech: "Firebase Cloud Functions, RESTful architecture" },
+          { layer: "Database",   tech: "Firebase Firestore (NoSQL, real-time)" },
+          { layer: "Auth",       tech: "Firebase Authentication (email + OAuth)" },
+          { layer: "Storage",    tech: "Firebase Storage for media assets" },
+          { layer: "Deployment", tech: "Vercel (frontend) · Firebase (backend)" },
         ],
       },
       {
-        num:   "05",
-        label: "The Impact",
+        num:     "05",
+        label:   "The Impact",
         heading: "Real performance. Real users. Real conversations.",
         body: [
-          "The platform handles live news ingestion, multi-user concurrent comment threads, and opinion CRUD operations — all with sub-second Firestore sync latency. The architecture is designed to scale horizontally without any backend re-engineering.",
-          "Users can read, react, and contribute opinions within seconds of an article going live. The structured opinion format encourages thoughtful writing over hot-takes, resulting in higher quality discourse than typical comment sections.",
+          "The platform handles live news ingestion, multi-user concurrent comment threads, and full opinion CRUD operations — all with sub-second Firestore sync latency. The architecture is designed to scale horizontally without any backend re-engineering.",
+          "Users can read, react, and contribute opinions within seconds of an article going live. The structured opinion format encourages thoughtful writing over hot-takes, resulting in higher quality discourse than a typical comment section.",
         ],
         highlights: [
           "Sub-second real-time sync via Firestore listeners",
@@ -70,8 +69,8 @@ export const PROJECT_DETAILS = {
         ],
       },
       {
-        num:   "06",
-        label: "Challenges & Learnings",
+        num:     "06",
+        label:   "Challenges & Learnings",
         heading: "Hard problems make the best teachers.",
         body: [
           "The biggest technical challenge was designing a Firestore schema that could support deeply nested data — opinions with threaded comments, each with likes and author references — without hitting Firestore's read/write limits or creating expensive queries.",
@@ -81,11 +80,9 @@ export const PROJECT_DETAILS = {
           "Designed a denormalised Firestore schema for nested threads",
           "Implemented optimistic UI updates for instant feedback",
           "Integrated Firebase Auth with protected routes in React Router",
-          "Learned to batch Firestore writes to reduce billing costs",
+          "Learned to batch Firestore writes to reduce billing and latency",
         ],
       },
     ],
   },
-
-  // ── Add more projects here following the same shape ──
 };

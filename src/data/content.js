@@ -10,6 +10,9 @@ export const PERSONAL = {
   phone:     "+91 7070867333",
   github:    "https://github.com/ADDYY27",
   linkedin:  "https://www.linkedin.com/in/adarsh-dubey-653154297/",
+  twitter:   "https://x.com/aDyyy_27?t=WDcceYDvc2IC8FwhkzQJtA&s=08",
+  instagram: "https://www.instagram.com/r3bel.18?igsh=dXQ5Y3kzbHZia2w3",
+  cv:        "/AdarshDubeyResume.pdf",
   heroDesc:
     "Full-stack developer & ML enthusiast — building responsive, scalable web applications and exploring AI-driven systems. B.Tech CS (Data Science) student at ABES Institute of Technology.",
   bio1:
@@ -39,6 +42,7 @@ export const PROJECTS = [
       "A full-stack news aggregator & opinion platform with live news aggregation, bias analysis, opinion sections, and real-time comments — built with React, Firebase & Firestore.",
     tags:  ["React", "Firebase", "Firestore"],
     color: "#dce8f5",
+    image: "/thirdlens-preview.png",
     link:  "https://thirdlens.vercel.app/",
     detailKey: "third-lens",
   },
