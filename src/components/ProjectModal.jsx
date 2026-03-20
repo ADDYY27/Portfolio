@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { PROJECT_DETAILS } from "../data/projectDetails";
+import { PROJECT_DETAILS } from "../data/ProjectDetails";
 
 function Section({ children, delay = 0 }) {
   return (
