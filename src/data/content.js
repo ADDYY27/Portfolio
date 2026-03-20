@@ -98,3 +98,5 @@ export const CERTIFICATIONS = [
   "Applied Machine Learning using Python — NIT Kurukshetra",
   "Database Management System — Infosys Springboard, Oct 2025",
 ];
+
+console.log("updated");
