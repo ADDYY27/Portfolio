@@ -18,7 +18,7 @@ export default function Hero() {
             style={{ fontFamily: "'DM Sans', sans-serif" }}
             className="text-xs uppercase tracking-[0.2em] text-[#7a7060]"
           >
-            Open to opportunities · 2025
+            Open to opportunities · 2026
           </span>
         </div>
       </FadeIn>

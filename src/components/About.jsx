@@ -2,6 +2,7 @@ import FadeIn from "./FadeIn";
 import {
   PERSONAL,
   SKILLS,
+  DEVOPS_CLOUD,
   EXPERIENCE,
   EDUCATION,
   CERTIFICATIONS,
@@ -185,6 +186,79 @@ export default function About() {
               </div>
             ))}
           </div>
+
+          {/* DEVOPS & CLOUD */}
+<div className="relative flex min-h-[250px]">
+
+  {/* DevOps category */}
+  <div className="w-[100px] flex-shrink-0 pt-5">
+    <span
+      style={{ fontFamily: "'DM Sans', sans-serif" }}
+      className="text-[10px] uppercase tracking-widest text-[#5a5448]"
+    >
+      DevOps & Cloud
+    </span>
+  </div>
+
+  {/* DevOps parent connector */}
+  <div className="relative w-[64px] flex-shrink-0">
+
+    {/* Parent dot */}
+    <span className="absolute left-[28px] top-7 w-[7px] h-[7px] rounded-full border border-[#c8b99a] bg-[#0d0d0b] z-10" />
+
+    {/* Horizontal connector */}
+    <div className="absolute left-[32px] top-[30px] w-[32px] h-px bg-[#2a2820]" />
+
+  </div>
+
+  {/* DevOps branches */}
+  <div className="relative flex-1 ml-2 pl-8">
+
+    {/* Branch vertical line */}
+    <div className="absolute left-0 top-7 bottom-7 w-px bg-[#3a3528]" />
+
+    <div className="flex flex-col">
+
+      {DEVOPS_CLOUD.map((item) => (
+        <div
+          key={item.category}
+           className="relative min-h-[78px] flex items-center group"
+
+        >
+
+          {/* Horizontal branch */}
+          <div className="absolute left-0 w-6 h-px bg-[#3a3528]" />
+
+          {/* Branch dot */}
+          <span className="absolute left-[-4px] w-[7px] h-[7px] rounded-full bg-[#c8b99a] z-10" />
+
+          {/* Content */}
+          <div className="pl-7">
+
+            <p
+              style={{ fontFamily: "'DM Sans', sans-serif" }}
+               className="text-[10px] uppercase tracking-[0.18em] text-[#6a6050] group-hover:text-[#7a7060] transition-colors duration-300"
+
+            >
+              {item.category}
+            </p>
+
+            <p
+              style={{ fontFamily: "'DM Sans', sans-serif" }}
+               className="text-sm text-[#c8c0b0] group-hover:text-[#f5f0e8] transition-colors duration-300 mt-1"
+
+            >
+              {item.items}
+            </p>
+
+          </div>
+        </div>
+      ))}
+
+    </div>
+  </div>
+
+</div>
 
           {/* NVIDIA badge */}
           <div className="mt-10 border border-[#2a2820] hover:border-[#76b900]/30 transition-colors duration-300 rounded-xl p-5 flex items-start gap-4">

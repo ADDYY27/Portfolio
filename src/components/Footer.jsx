@@ -54,7 +54,7 @@ export default function Footer() {
         style={{ fontFamily: "'DM Sans', sans-serif" }}
         className="text-[11px] text-[#4a4538] uppercase tracking-widest"
       >
-        © 2025 Adarsh Kumar Dubey
+        © 2026 Adarsh Kumar Dubey
       </p>
 
       <div className="flex items-center gap-5">

@@ -14,11 +14,11 @@ export const PERSONAL = {
   instagram: "https://www.instagram.com/r3bel.18?igsh=dXQ5Y3kzbHZia2w3",
   cv:        "/AdarshDubeyResume.pdf",
   heroDesc:
-    "Full-stack developer & ML enthusiast — building responsive, scalable web applications and exploring AI-driven systems. B.Tech CS (Data Science) student at ABES Institute of Technology.",
+    "Full-stack developer & DevOps enthusiast — building web applications, exploring cloud technologies, and learning how to ship better software.",
   bio1:
-    "I'm a passionate and driven learner with strong programming skills in Java, C, and C++. Hands-on experience with React.js, JavaScript, and Firebase enables me to build responsive, dynamic, and scalable web applications.",
+    "I'm a full-stack developer with hands-on experience building web applications using React, Node.js, Express, and MongoDB. I've also worked with Docker, GitHub Actions, AWS, and CI/CD while deploying and managing applications.",
   bio2:
-    "Currently pursuing Machine Learning through NVIDIA AI Ventures and trained at NIT Kurukshetra, deepening my interest in AI and data-driven systems.",
+    "Currently focused on DevOps and cloud technologies while continuing to build with the MERN stack. I enjoy understanding how applications work end-to-end — from development and containerization to automated deployment.",
 };
 
 export const NAV_LINKS = [
@@ -29,8 +29,8 @@ export const NAV_LINKS = [
 ];
 
 export const STATS = [
-  { value: "2+",  label: "Projects built" },
-  { value: "5+",  label: "Tech stacks"    },
+  { value: "5+",  label: "Projects built" },
+  { value: "8+",  label: "Technologies"   },
   { value: "7.1", label: "Current SGPA"   },
 ];
 
@@ -39,41 +39,69 @@ export const PROJECTS = [
     company:     "Full-Stack · 2026",
     title:       "The Third Lens",
     description:
-      "A full-stack news aggregator & opinion platform with live news aggregation, bias analysis, opinion sections, and real-time comments — built with React, Firebase & Firestore.",
-    tags:  ["React", "Firebase", "Firestore"],
-    color: "#dce8f5",
-    image: "/thirdlens-preview.png",
-    link:  "https://thirdlens.vercel.app/",
-    detailKey: "third-lens",
+      "Built a news aggregator that brings articles from different sources into one simple interface. Developed with React.js and Node.js, with search, filtering, and category-based browsing. Worked with APIs, environment variables, and production deployment.",
+    tags:        ["React", "Node.js", "APIs"],
+    color:       "#dce8f5",
+    image:       "/thirdlens-preview.png",
+    link:        "https://thirdlens.vercel.app/",
+    detailKey:   "third-lens",
   },
   {
-    company:     "Personal · 2025",
-    title:       "Portfolio Website",
+    company:     "DevOps · 2026",
+    title:       "Chattr",
     description:
-      "Responsive personal portfolio built with React, featuring reusable components, client-side routing, resume download, and cross-browser optimised performance.",
-    tags:  ["React", "TailwindCSS", "Vercel"],
-    color: "#f0ece4",
-    link:  "#",
+      "Built a real-time chat application and deployed it using Docker, GitHub Actions, and AWS EC2. Created separate production containers for the frontend and backend, automated image builds and Docker Hub pushes, and configured CI/CD deployment over SSH with post-deployment health checks.",
+    tags:        ["React", "Node.js", "Docker", "GitHub Actions", "AWS"],
+    color:       "#f0ece4",
+    image:       "/chattr-preview.png",
+    link:        "https://chatapp-ivory-eta.vercel.app/",
+    detailKey:   "chattr",
+  },
+  {
+    company:     "Full-Stack · 2026",
+    title:       "Bharat Through Time",
+    description:
+      "Built an interactive platform to explore Indian history through maps, rulers, places, events, and historical polities. Developed with React.js, Vite, MapLibre GL JS, Node.js, and Express.js, with Wikidata/SPARQL for historical data and MongoDB for storage.",
+    tags:        ["React", "Vite", "MapLibre", "Node.js", "MongoDB"],
+    color:       "#e8e0d5",
+    image:       "/bharat-preview.png",
+    link:        "https://bharat-through-time.vercel.app/",
+    detailKey:   "bharat-through-time",
   },
 ];
 
 export const SKILLS = [
-  { category: "Languages", items: "Java, C, C++, JavaScript"          },
-  { category: "Frontend",  items: "HTML5, CSS3, React.js, TailwindCSS" },
-  { category: "Backend",   items: "Node.js, RESTful API"               },
-  { category: "Database",  items: "MySQL, SQL, DBMS"                   },
-  { category: "Tools",     items: "Git, GitHub, VS Code, Postman, Vercel" },
+  { category: "Languages", items: "Java · C · C++ · JavaScript"          },
+  { category: "Frontend",  items: "HTML5 · CSS3 · React.js · TailwindCSS" },
+  { category: "Backend",   items: "Node.js · Express.js · REST APIs"     },
+  { category: "Database",  items: "MongoDB · MySQL · SQL · DBMS"         },
+  { category: "Tools",     items: "Git · GitHub · VS Code · Postman · Vercel" },
+];
+
+export const DEVOPS_CLOUD = [
+  {
+    category: "Cloud Infrastructure",
+    items: "AWS · EC2 · VPC · IAM · S3",
+  },
+  {
+    category: "CI/CD & Containers",
+    items: "Docker · GitHub Actions · Jenkins · Kubernetes",
+  },
+  {
+    category: "Systems & Networking",
+    items: "Linux · Nginx · Networking",
+  },
 ];
 
 export const EXPERIENCE = [
   {
-    role:    "Research & Development Intern",
-    company: "TECHMATE Gzb.",
-    period:  "Jun 2024 – Sep 2024",
+    role:    "Technical Team Member",
+    company: "DRIFKO — Ghaziabad",
+    period:  "June 2025 – Sept 2025",
     bullets: [
-      "Developed responsive web interfaces using HTML, CSS, and JavaScript.",
-      "Improved application performance and enhanced UI responsiveness.",
-      "Collaborated with team using Git version control workflow.",
+      "Started as a Technical Team Member and gained hands-on DevOps exposure during a 3-month internship.",
+      "Containerized 1 production application using Docker, managing 4 containers across environment configurations.",
+      "This experience sparked my interest in DevOps and led me to shift my focus from MERN toward DevOps.",
     ],
   },
   {
